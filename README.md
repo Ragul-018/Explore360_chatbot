@@ -1,119 +1,104 @@
-EXPLORE360 AI Chatbot 🇮🇳
-An intelligent, multilingual AI chatbot designed to be the ultimate travel companion for anyone exploring the wonders of India. Built with React and powered by the Google Gemini API, this chatbot provides trip itineraries, finds nearby points of interest, and communicates in multiple Indian languages.
+<div align="center">
+# India Tourism AI Chatbot 
 
-(Recommendation: Create a short GIF showcasing the chatbot's features and replace the link above)
+**An intelligent, multilingual AI-powered travel assistant for exploring India.**
 
-✨ Features
-This chatbot is packed with features to enhance the travel planning experience:
+</div>
 
-Conversational AI: Utilizes the Google Gemini API for natural, context-aware conversations and accurate travel information.
+<div align="center">
 
-Multilingual Support: Seamlessly switch between multiple languages:
+[![React](https://img.shields.io/badge/React-20232A?style=for-the-badge&logo=react&logoColor=61DAFB)](https://reactjs.org/)
+[![Tailwind CSS](https://img.shields.io/badge/Tailwind_CSS-38B2AC?style=for-the-badge&logo=tailwind-css&logoColor=white)](https://tailwindcss.com/)
+[![Google Gemini](https://img.shields.io/badge/Google_Gemini-8E75B7?style=for-the-badge&logo=google&logoColor=white)](https://ai.google/discover/gemini/)
+[![OpenStreetMap](https://img.shields.io/badge/OpenStreetMap-7EBC6F?style=for-the-badge&logo=openstreetmap&logoColor=white)](https://www.openstreetmap.org/)
 
-English
+</div>
 
-Hindi (हिन्दी)
+<div align="center">
+  
+![Chatbot Demo GIF](https://media.giphy.com/media/v1.Y2lkPTc5MGI3NjExd2pxbGI1cTQ3cWo0cDZrZ2kyY3R1MzZqejBxbDlsdmZ2OHZyOXR6eiZlcD12MV9naWZzX3NlYXJjaCZjdD1n/S60CrN9iMxFlyp7uM8/giphy.gif)
 
-Tamil (தமிழ்)
 
-Bengali (বাংলা)
+</div>
 
-Gujarati (ગુજરાતી)
+### **Introduction**
 
-Kannada (ಕನ್ನಡ)
+The India Tourism AI Chatbot is an interactive and user-friendly travel guide designed to assist tourists in planning their trips across India. Leveraging the power of Google's Gemini AI, it provides intelligent responses, generates custom travel itineraries, and offers location-based recommendations in multiple Indian languages. This project aims to make travel planning seamless, accessible, and personalized for everyone.
 
-Marathi (मराठी)
+---
 
-Dynamic Trip Itineraries: Ask for a trip plan, and the AI will generate a detailed itinerary in a clean, easy-to-read table format.
+### **✨ Key Features**
 
-Advanced Location Search:
+* **🤖 Conversational AI:** Natural and context-aware travel advice powered by the **Google Gemini API**.
+* **🌐 Multilingual Support:** Communicates fluently in **7+ Indian languages**, with an easy-to-use language switcher.
+* **🗺️ Dynamic Trip Planning:** Generates detailed day-by-day itineraries in a clean table format on request.
+* **📍 Hyperlocal Search:** Finds nearby points of interest using the **OpenStreetMap API**, including:
+    * Tourist Attractions
+    * Hotels & Lodging
+    * Restaurants (with **vegetarian/non-vegetarian** filtering)
+    * Bus Stands & Railway Stations
+    * Medical Shops
+* **🔊 Voice I/O:** Features **Text-to-Speech** (TTS) for reading out responses and **Speech-to-Text** (STT) for voice commands.
+* **🔗 Interactive Map Links:** Each location result includes a direct, coordinate-based link to **Google Maps** for pinpoint accuracy.
+* **🎨 Modern UI:** A sleek and responsive interface built with **Tailwind CSS**, featuring quick replies and a floating action button.
 
-Find Anything Nearby: Ask for "hotels near me," "nearby bus stands," or "railway stations around here."
+---
 
-Smart Filtering: Specifically search for vegetarian or non-vegetarian restaurants.
+### **🛠️ Tech Stack**
 
-Accurate Results: Uses the OpenStreetMap API for reliable location data.
+| Technology        | Description                               |
+| ----------------- | ----------------------------------------- |
+| **React.js** | A JavaScript library for building user interfaces.     |
+| **Tailwind CSS** | A utility-first CSS framework for rapid UI development. |
+| **Google Gemini** | The core AI model for chat and text-to-speech (TTS).  |
+| **OpenStreetMap** | Used via the Overpass API for fetching geolocation data. |
+| **Web Speech API**| Enables voice recognition for hands-free interaction. |
 
-Interactive Google Maps Links: Every location result includes a button that opens the precise location (using latitude and longitude) in Google Maps in a new tab.
+---
 
-Text-to-Speech (TTS): Click the "Read Aloud" button on any bot message to have it spoken to you, powered by the Gemini TTS API.
+### **🚀 Getting Started**
 
-Voice Input (Speech-to-Text): Use the microphone button to speak your queries directly to the chatbot using the browser's built-in Web Speech API.
+Follow these instructions to set up the project on your local machine.
 
-Modern UI: A clean, responsive, and user-friendly chat interface built with Tailwind CSS, featuring a floating action button and quick-reply suggestions.
+1.  **Clone the Repository**
+    ```sh
+    git clone (https://github.com/your-username/india-tourism-chatbot.git)
+    cd india-tourism-chatbot
+    ```
 
-🛠️ Tech Stack
-Frontend: React.js
+2.  **Install Dependencies**
+    ```sh
+    npm install
+    ```
 
-Styling: Tailwind CSS
+3.  **Set Up Environment Variables**
+    * Create a file named `.env` in the root of your project.
+    * Get your API key from [Google AI Studio](https://makersuite.google.com/).
+    * Add your API key to the `.env` file:
+        ```env
+        REACT_APP_GEMINI_API_KEY=YOUR_API_KEY_HERE
+        ```
 
-Core AI Model: Google Gemini API
+4.  **Run the Application**
+    ```sh
+    npm start
+    ```
+    Navigate to `http://localhost:3000` in your browser.
 
-Text-to-Speech: Google Gemini TTS API
+---
 
-Location Data: OpenStreetMap (Overpass API)
+### **🤝 Contributing**
 
-Voice Input: Web Speech API
+Contributions are welcome! If you have ideas for new features or improvements, feel free to fork the repository and submit a pull request.
 
-🚀 Getting Started
-To get a local copy up and running, follow these simple steps.
+1.  Fork the Project
+2.  Create your Feature Branch (`git checkout -b feature/NewFeature`)
+3.  Commit your Changes (`git commit -m 'Add some NewFeature'`)
+4.  Push to the Branch (`git push origin feature/NewFeature`)
+5.  Open a Pull Request
 
-Prerequisites
-Node.js (v14 or later)
+---
 
-npm or yarn
+### **📝 License**
 
-Installation
-Clone the repo:
-
-git clone [https://github.com/your-username/india-tourism-chatbot.git](https://github.com/your-username/india-tourism-chatbot.git)
-cd india-tourism-chatbot
-
-Install NPM packages:
-
-npm install
-
-Set up your API Key:
-
-Create a .env file in the root of your project.
-
-Get your API key from Google AI Studio.
-
-Add the following line to your .env file:
-
-REACT_APP_GEMINI_API_KEY=YOUR_API_KEY_HERE
-
-The project is configured to use this environment variable, so no code changes are needed.
-
-Run the application:
-
-npm start
-
-The app will be available at http://localhost:3000.
-
-🗺️ Future Roadmap
-Chat History: Implement local storage to save conversation history.
-
-More Categories: Add more location search categories like ATMs, hospitals, and shopping malls.
-
-Image Generation: Integrate an image generation model to show pictures of tourist destinations.
-
-User Accounts: Allow users to save itineraries and favorite locations.
-
-🤝 Contributing
-Contributions are what make the open-source community such an amazing place to learn, inspire, and create. Any contributions you make are greatly appreciated.
-
-If you have a suggestion that would make this better, please fork the repo and create a pull request. You can also simply open an issue with the tag "enhancement".
-
-Fork the Project
-
-Create your Feature Branch (git checkout -b feature/AmazingFeature)
-
-Commit your Changes (git commit -m 'Add some AmazingFeature')
-
-Push to the Branch (git push origin feature/AmazingFeature)
-
-Open a Pull Request
-
-📝 License
-Distributed under the MIT License. See LICENSE for more information.
+This project is licensed under the MIT License. See the `LICENSE` file for details.
