@@ -1,5 +1,5 @@
 <div align="center">
-# India Tourism AI Chatbot 
+Explore360 AI Chatbot 
 
 **An intelligent, multilingual AI-powered travel assistant for exploring India.**
 
