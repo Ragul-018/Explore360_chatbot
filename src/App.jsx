@@ -9,10 +9,10 @@ const GEMINI_TTS_API_URL = `https://generativelanguage.googleapis.com/v1beta/mod
 const translations = {
     en: {
         name: "English",
-        welcomeMessage: "Hello! I am your personal AI guide for exploring the beautiful country of India. How can I assist you with your travel plans today?",
+        welcomeMessage: "Hello! I am your personal AI guide for exploring the beautiful state of Jharkhand. How can I assist you with your travel plans today?",
         placeholder: "Type your message...",
         systemPrompt: `
-You are 'India Tourism AI', a friendly and knowledgeable chatbot for Indian tourism. Respond in the language of the user's query.
+You are 'Jharkhand Tourism AI', a friendly and knowledgeable chatbot for Jharkhand tourism. Respond in the language of the user's query.
 
 1.  If the user asks for a trip plan or itinerary, respond with a JSON object with a 'planTable' key. The value of 'planTable' should be an array of objects, each with these keys: 'place', 'arrivalTime', 'departureTime', 'duration', and 'notes'.
 
@@ -21,9 +21,9 @@ You are 'India Tourism AI', a friendly and knowledgeable chatbot for Indian tour
 Keep all responses conversational and precise.`,
         errorResponse: "I'm sorry, I couldn't generate a response. Please try again.",
         suggestedQueries: [
-            "What are the best places to visit in Kerala?",
-            "Find vegetarian restaurants near me",
-            "Find railway stations nearby",
+            "What are the best waterfalls in Jharkhand?",
+            "Create a 2-day trip plan for Ranchi",
+            "Find tribal art and craft stores nearby",
         ],
         micButton: "Speak",
         readAloud: "Read Aloud",
@@ -31,9 +31,9 @@ Keep all responses conversational and precise.`,
     },
     hi: {
         name: "हिन्दी",
-        welcomeMessage: "नमस्ते! मैं भारत की खोज के लिए आपका व्यक्तिगत एआई गाइड हूं। मैं आज आपकी यात्रा योजनाओं में कैसे मदद कर सकता हूं?",
+        welcomeMessage: "नमस्ते! मैं झारखंड की खोज के लिए आपका व्यक्तिगत एआई गाइड हूं। मैं आज आपकी यात्रा योजनाओं में कैसे मदद कर सकता हूं?",
         placeholder: "अपना संदेश टाइप करें...",
-        systemPrompt: `आप 'भारत पर्यटन एआई' हैं, जो भारतीय पर्यटन के लिए एक दोस्ताना और जानकार चैटबॉट हैं। उपयोगकर्ता के प्रश्न की भाषा में जवाब दें।
+        systemPrompt: `आप 'झारखंड पर्यटन एआई' हैं, जो झारखंड पर्यटन के लिए एक दोस्ताना और जानकार चैटबॉट हैं। उपयोगकर्ता के प्रश्न की भाषा में जवाब दें।
 
 1.  यदि उपयोगकर्ता यात्रा योजना या यात्रा कार्यक्रम के लिए पूछता है, तो 'planTable' कुंजी के साथ एक JSON ऑब्जेक्ट के साथ प्रतिक्रिया दें। 'planTable' का मान ऑब्जेक्ट्स का एक ऐरे होना चाहिए, प्रत्येक में इन कुंजियों के साथ: 'place', 'arrivalTime', 'departureTime', 'duration', और 'notes'।
 
@@ -42,9 +42,9 @@ Keep all responses conversational and precise.`,
 बातचीत और सटीक प्रतिक्रियाएं रखें।`,
         errorResponse: "क्षमा करें, मैं प्रतिक्रिया उत्पन्न नहीं कर सका। कृपया पुनः प्रयास करें।",
         suggestedQueries: [
-            "दिल्ली के ऐतिहासिक स्थानों के बारे में बताएं।",
-            "मेरे पास शाकाहारी रेस्तरां खोजें",
-            "आस-पास रेलवे स्टेशन खोजें",
+            "झारखंड के सबसे अच्छे झरने कौन से हैं?",
+            "रांची के लिए 2 दिन की यात्रा योजना बनाएं",
+            "आस-पास आदिवासी कला और शिल्प की दुकानें खोजें",
         ],
         micButton: "बोलें",
         readAloud: "जोर से पढ़ें",
@@ -52,9 +52,9 @@ Keep all responses conversational and precise.`,
     },
     ta: {
         name: "தமிழ்",
-        welcomeMessage: "வணக்கம்! இந்தியாவைச் சுற்றிப் பார்ப்பதற்கான உங்கள் தனிப்பட்ட AI வழிகாட்டி நான். உங்கள் பயணத் திட்டங்களுக்கு நான் இன்று எவ்வாறு உதவ முடியும்?",
+        welcomeMessage: "வணக்கம்! ஜார்க்கண்ட் மாநிலத்தைச் சுற்றிப் பார்ப்பதற்கான உங்கள் தனிப்பட்ட AI வழிகாட்டி நான். உங்கள் பயணத் திட்டங்களுக்கு நான் இன்று எவ்வாறு உதவ முடியும்?",
         placeholder: "உங்கள் செய்தியைத் தட்டச்சு செய்க...",
-        systemPrompt: `நீங்கள் 'இந்திய சுற்றுலா AI', இந்திய சுற்றுலாவுக்கான நட்பான மற்றும் அறிவுள்ள சாட்போட். பயனரின் வினவலின் மொழியில் பதிலளிக்கவும்.
+        systemPrompt: `நீங்கள் 'ஜார்க்கண்ட் சுற்றுலா AI', ஜார்க்கண்ட் சுற்றுலாவுக்கான நட்பான மற்றும் அறிவுள்ள சாட்போட். பயனரின் வினவலின் மொழியில் பதிலளிக்கவும்.
 
 1.  பயனர் பயணத் திட்டம் அல்லது பயண நிரல் கேட்டால், 'planTable' என்ற விசையுடன் ஒரு JSON பொருளுடன் பதிலளிக்கவும். 'planTable'-இன் மதிப்பு பொருட்களின் வரிசையாக இருக்க வேண்டும், ஒவ்வொன்றிலும் இந்த விசைகள் இருக்க வேண்டும்: 'place', 'arrivalTime', 'departureTime', 'duration', மற்றும் 'notes'.
 
@@ -63,9 +63,9 @@ Keep all responses conversational and precise.`,
 அனைத்து பதில்களையும் உரையாடல் மற்றும் துல்லியமாக வைக்கவும்.`,
         errorResponse: "மன்னிக்கவும், என்னால் ஒரு பதிலை உருவாக்க முடியவில்லை. தயவுசெய்து மீண்டும் முயற்சிக்கவும்。",
         suggestedQueries: [
-            "கேரளாவில் பார்க்க வேண்டிய சிறந்த இடங்கள் யாவை?",
-            "எனக்கு அருகிலுள்ள சைவ உணவகங்களைக் கண்டறியவும்",
-            "அருகிலுள்ள ரயில் நிலையங்களைக் கண்டறியவும்",
+            "ஜார்க்கண்டில் பார்க்க வேண்டிய சிறந்த நீர்வீழ்ச்சிகள் யாவை?",
+            "ராஞ்சிக்கு 2 நாள் பயணத் திட்டத்தை உருவாக்கவும்",
+            "அருகிலுள்ள பழங்குடியினர் கலை மற்றும் கைவினைக் கடைகளைக் கண்டறியவும்",
         ],
         micButton: "பேசவும்",
         readAloud: "சத்தமாக படிக்கவும்",
@@ -73,9 +73,9 @@ Keep all responses conversational and precise.`,
     },
     bn: {
         name: "বাংলা",
-        welcomeMessage: "নমস্কার! আমি ভারত ভ্রমণের জন্য আপনার ব্যক্তিগত এআই গাইড। আমি আজ আপনার ভ্রমণ পরিকল্পনায় কীভাবে সাহায্য করতে পারি?",
+        welcomeMessage: "নমস্কার! আমি ঝাড়খণ্ড ভ্রমণের জন্য আপনার ব্যক্তিগত এআই গাইড। আমি আজ আপনার ভ্রমণ পরিকল্পনায় কীভাবে সাহায্য করতে পারি?",
         placeholder: "আপনার বার্তা লিখুন...",
-        systemPrompt: `আপনি 'ভারত পর্যটন এআই', ভারতীয় পর্যটনের জন্য একজন বন্ধুত্বপূর্ণ এবং জ্ঞানী চ্যাটবট। ব্যবহারকারীর প্রশ্নের ভাষায় উত্তর দিন।
+        systemPrompt: `আপনি 'ঝাড়খণ্ড পর্যটন এআই', ঝাড়খণ্ড পর্যটনের জন্য একজন বন্ধুত্বপূর্ণ এবং জ্ঞানী চ্যাটবট। ব্যবহারকারীর প্রশ্নের ভাষায় উত্তর দিন।
 
 1.  ব্যবহারকারী যদি ট্রিপ প্ল্যান বা ভ্রমণসূচীর জন্য জিজ্ঞাসা করে, তাহলে 'planTable' কী সহ একটি JSON অবজেক্ট দিয়ে উত্তর দিন। 'planTable'-এর মান অবশ্যই অবজেক্টের একটি অ্যারে হতে হবে, যার প্রতিটিতে এই কীগুলি থাকবে: 'place', 'arrivalTime', 'departureTime', 'duration', এবং 'notes'।
 
@@ -84,9 +84,9 @@ Keep all responses conversational and precise.`,
 সমস্ত প্রতিক্রিয়া কথোপকথনমূলক এবং নির্ভুল রাখুন।`,
         errorResponse: "দুঃখিত, আমি একটি প্রতিক্রিয়া তৈরি করতে পারিনি। অনুগ্রহ করে আবার চেষ্টা করুন।",
         suggestedQueries: [
-            "কেরালার সেরা দর্শনীয় স্থানগুলো কী কী?",
-            "আমার কাছাকাছি নিরামিষ রেস্তোরাঁ খুঁজুন",
-            "কাছাকাছি রেলওয়ে স্টেশন খুঁজুন",
+            "ঝাড়খণ্ডের সেরা জলপ্রপাতগুলি কী কী?",
+            "রাঁচির জন্য ২ দিনের একটি ভ্রমণ পরিকল্পনা তৈরি করুন",
+            "কাছাকাছি আদিবাসী শিল্প ও কারুশিল্পের দোকান খুঁজুন",
         ],
         micButton: "বলুন",
         readAloud: "উচ্চস্বরে পড়ুন",
@@ -94,9 +94,9 @@ Keep all responses conversational and precise.`,
     },
     gu: {
         name: "ગુજરાતી",
-        welcomeMessage: "નમસ્કાર! હું ભારતનું અન્વેષણ કરવા માટે તમારો વ્યક્તિગત AI માર્ગદર્શક છું. હું આજે તમારી મુસાફરી યોજનાઓમાં કેવી રીતે મદદ કરી શકું?",
+        welcomeMessage: "નમસ્કાર! હું ઝારખંડનું અન્વેષણ કરવા માટે તમારો વ્યક્તિગત AI માર્ગદર્શક છું. હું આજે તમારી મુસાફરી યોજનાઓમાં કેવી રીતે મદદ કરી શકું?",
         placeholder: "તમારો સંદેશ લખો...",
-        systemPrompt: `તમે 'ભારત ટૂરિઝમ AI' છો, જે ભારતીય પર્યટન માટે એક મૈત્રીપૂર્ણ અને જાણકાર ચેટબોટ છે. વપરાશકર્તાની પૂછપરછની ભાષામાં જવાબ આપો.
+        systemPrompt: `તમે 'ઝારખંડ ટૂરિઝમ AI' છો, જે ઝારખંડ પર્યટન માટે એક મૈત્રીપૂર્ણ અને જાણકાર ચેટબોટ છે. વપરાશકર્તાની પૂછપરછની ભાષામાં જવાબ આપો.
 
 1.  જો વપરાશકર્તા ટ્રીપ પ્લાન અથવા પ્રવાસ યોજના માટે પૂછે, તો 'planTable' કી સાથે JSON ઑબ્જેક્ટ સાથે પ્રતિસાદ આપો. 'planTable' નું મૂલ્ય ઑબ્જેક્ટ્સની એરે હોવી જોઈએ, દરેકમાં આ કીઓ સાથે: 'place', 'arrivalTime', 'departureTime', 'duration', અને 'notes'.
 
@@ -105,9 +105,9 @@ Keep all responses conversational and precise.`,
 બધા જવાબો વાતચીત અને ચોક્કસ રાખો.`,
         errorResponse: "માફ કરશો, હું પ્રતિસાદ જનરેટ કરી શક્યો નથી. કૃપા કરીને ફરીથી પ્રયાસ કરો.",
         suggestedQueries: [
-            "કેરળમાં ફરવા માટેના શ્રેષ્ઠ સ્થળો કયા છે?",
-            "મારી નજીક શાકાહારી રેસ્ટોરન્ટ શોધો",
-            "નજીકના રેલ્વે સ્ટેશન શોધો",
+            "ઝારખંડમાં શ્રેષ્ઠ ધોધ કયા છે?",
+            "રાંચી માટે 2-દિવસીય પ્રવાસ યોજના બનાવો",
+            "નજીકમાં આદિવાસી કલા અને હસ્તકલાની દુકાનો શોધો",
         ],
         micButton: "બોલો",
         readAloud: "મોટેથી વાંચો",
@@ -115,20 +115,20 @@ Keep all responses conversational and precise.`,
     },
     kn: {
         name: "ಕನ್ನಡ",
-        welcomeMessage: "ನಮಸ್ಕಾರ! ನಾನು ಭಾರತವನ್ನು ಅನ್ವೇಷಿಸಲು ನಿಮ್ಮ ವೈಯಕ್ತಿಕ AI ಮಾರ್ಗದರ್ಶಿ. ಇಂದು ನಿಮ್ಮ ಪ್ರಯಾಣ ಯೋಜನೆಗಳಿಗೆ আমি ಹೇಗೆ ಸಹಾಯ ಮಾಡಬಹುದು?",
+        welcomeMessage: "ನಮಸ್ಕಾರ! ನಾನು ಜಾರ್ಖಂಡ್ ರಾಜ್ಯವನ್ನು ಅನ್ವೇಷಿಸಲು ನಿಮ್ಮ ವೈಯಕ್ತಿಕ AI ಮಾರ್ಗದರ್ಶಿ. ಇಂದು ನಿಮ್ಮ ಪ್ರಯಾಣ ಯೋಜನೆಗಳಿಗೆ ನಾನು ಹೇಗೆ ಸಹಾಯ ಮಾಡಬಹುದು?",
         placeholder: "ನಿಮ್ಮ ಸಂದೇಶವನ್ನು ಟೈಪ್ ಮಾಡಿ...",
-        systemPrompt: `ನೀವು 'ಭಾರತ ಪ್ರವಾಸೋದ್ಯಮ AI', ಭಾರತೀಯ ಪ್ರವಾಸೋದ್ಯಮಕ್ಕಾಗಿ ಸ್ನೇಹಪರ ಮತ್ತು ಜ್ಞಾನವುಳ್ಳ ಚಾಟ್‌ಬಾಟ್. ಬಳಕೆದಾರರ ಪ್ರಶ್ನೆಯ ಭಾಷೆಯಲ್ಲಿ ಪ್ರತಿಕ್ರಿಯಿಸಿ.
+        systemPrompt: `ನೀವು 'ಜಾರ್ಖಂಡ್ ಪ್ರವಾಸೋದ್ಯಮ AI', ಜಾರ್ಖಂಡ್ ಪ್ರವಾಸೋದ್ಯಮಕ್ಕಾಗಿ ಸ್ನೇಹಪರ ಮತ್ತು ಜ್ಞಾನವುಳ್ಳ ಚಾಟ್‌ಬಾಟ್. ಬಳಕೆದಾರರ ಪ್ರಶ್ನೆಯ ಭಾಷೆಯಲ್ಲಿ ಪ್ರತಿಕ್ರಿಯಿಸಿ.
 
-1.  ಬಳಕೆದಾರರು ಪ್ರವಾಸ ಯೋಜನೆ ಅಥವಾ ಪ್ರವಾಸದ ವಿವರವನ್ನು ಕೇಳಿದರೆ, 'planTable' ಕೀಲಿಯೊಂದಿಗೆ JSON ವಸ್ತುವಿನೊಂದಿಗೆ ಪ್ರತಿಕ್ರಿಯಿಸಿ. 'planTable' ಮೌಲ್ಯವು ವಸ್ತುಗಳ ಒಂದು ಶ್ರೇಣಿಯಾಗಿರಬೇಕು, ಪ್ರತಿಯೊಂದೂ ಈ ಕೀಲಿಗಳನ್ನು ಹೊಂದಿರಬೇಕು: 'place', 'arrivalTime', 'departureTime', 'duration', અને 'notes'.
+1.  ಬಳಕೆದಾರರು ಪ್ರವಾಸ ಯೋಜನೆ ಅಥವಾ ಪ್ರವಾಸದ ವಿವರವನ್ನು ಕೇಳಿದರೆ, 'planTable' ಕೀಲಿಯೊಂದಿಗೆ JSON ವಸ್ತುವಿನೊಂದಿಗೆ ಪ್ರತಿಕ್ರಿಯಿಸಿ. 'planTable' ಮೌಲ್ಯವು ವಸ್ತುಗಳ ಒಂದು ಶ್ರೇಣಿಯಾಗಿರಬೇಕು, ಪ್ರತಿಯೊಂದೂ ಈ ಕೀಲಿಗಳನ್ನು ಹೊಂದಿರಬೇಕು: 'place', 'arrivalTime', 'departureTime', 'duration', ಮತ್ತು 'notes'.
 
 2.  ಎಲ್ಲಾ ಇತರ ಪ್ರಶ್ನೆಗಳಿಗೆ, 'title' ಸ್ಟ್ರಿಂಗ್ ಮತ್ತು ಸ್ಟ್ರಿಂಗ್‌ಗಳ 'items' ಶ್ರೇಣಿಯನ್ನು ಹೊಂದಿರುವ JSON ವಸ್ತುವಿನೊಂದಿಗೆ ಪ್ರತಿಕ್ರಿಯಿಸಿ.
 
 ಎಲ್ಲಾ ಪ್ರತಿಕ್ರಿಯೆಗಳನ್ನು ಸಂಭಾಷಣಾತ್ಮಕ ಮತ್ತು ನಿಖರವಾಗಿರಿಸಿ.`,
         errorResponse: "ಕ್ಷಮಿಸಿ, ನಾನು ಪ್ರತಿಕ್ರಿಯೆಯನ್ನು ರಚಿಸಲು ಸಾಧ್ಯವಾಗಲಿಲ್ಲ. ದಯವಿಟ್ಟು ಮತ್ತೆ ಪ್ರಯತ್ನಿಸಿ.",
         suggestedQueries: [
-            "ಕೇರಳದಲ್ಲಿ ಭೇಟಿ ನೀಡಲು ಉತ್ತಮ ಸ್ಥಳಗಳು ಯಾವುವು?",
-            "ನನ್ನ ಹತ್ತಿರದ ಸಸ್ಯಾಹಾರಿ ರೆಸ್ಟೋರೆಂಟ್‌ಗಳನ್ನು ಹುಡುಕಿ",
-            "ಹತ್ತಿರದ ರೈಲು ನಿಲ್ದಾಣಗಳನ್ನು ಹುಡುಕಿ",
+            "ಜಾರ್ಖಂಡ್‌ನ ಉತ್ತಮ ಜಲಪಾತಗಳು ಯಾವುವು?",
+            "ರಾಂಚಿಗಾಗಿ 2 ದಿನಗಳ ಪ್ರವಾಸ ಯೋಜನೆಯನ್ನು ರಚಿಸಿ",
+            "ಹತ್ತಿರದ ಬುಡಕಟ್ಟು ಕಲೆ ಮತ್ತು ಕರಕುಶಲ ಅಂಗಡಿಗಳನ್ನು ಹುಡುಕಿ",
         ],
         micButton: "ಮಾತನಾಡಿ",
         readAloud: "ಗಟ್ಟಿಯಾಗಿ ಓದಿ",
@@ -136,9 +136,9 @@ Keep all responses conversational and precise.`,
     },
     mr: {
         name: "मराठी",
-        welcomeMessage: "नमस्कार! मी भारताच्या શોधासाठी तुमचा वैयक्तिक एआय मार्गदर्शक आहे। मी आज तुमच्या प्रवासाच्या યોજનાंमध्ये कशी मदत करू शकतो?",
+        welcomeMessage: "नमस्कार! मी झारखंड राज्याच्या शोधासाठी तुमचा वैयक्तिक एआय मार्गदर्शक आहे। मी आज तुमच्या प्रवासाच्या યોજનાंमध्ये कशी मदत करू शकतो?",
         placeholder: "तुमचा संदेश टाइप करा...",
-        systemPrompt: `तुम्ही 'भारत पर्यटन एआय' आहात, भारतीय पर्यटनासाठी એક मैत्रीपूर्ण आणि जाणकार चॅटಬॉट. वापरकर्त्याच्या प्रश्नाच्या भाषेत উত্তর द्या.
+        systemPrompt: `तुम्ही 'झारखंड पर्यटन एआय' आहात, झारखंड पर्यटनासाठी एक मैत्रीपूर्ण आणि जाणकार चॅटबॉट. वापरकर्त्याच्या प्रश्नाच्या भाषेत उत्तर द्या.
 
 1.  वापरकर्त्याने ट्रिप प्लॅन किंवा प्रवासाची योजना विचारल्यास, 'planTable' की सह JSON ऑब्जेक्टसह प्रतिसाद द्या. 'planTable' चे मूल्य ऑब्जेक्ट्सची अॅरे असावी, प्रत्येकामध्ये या की असाव्यात: 'place', 'arrivalTime', 'departureTime', 'duration', आणि 'notes'.
 
@@ -147,9 +147,9 @@ Keep all responses conversational and precise.`,
 सर्व प्रतिसाद संभाषणात्मक आणि अचूक ठेवा.`,
         errorResponse: "माफ करा, मी प्रतिसाद तयार करू शकले नाही। कृपया पुन्हा प्रयत्न करा।",
         suggestedQueries: [
-            "केरळमधील सर्वोत्तम ठिकाणे कोणती आहेत?",
-            "माझ्या जवळ शाकाहारी रेस्टॉरंट शोधा",
-            "जवळपासची रेल्वे स्टेशन शोधा",
+            "झारखंडमधील सर्वोत्तम धबधबे कोणते आहेत?",
+            "रांचीसाठी २ दिवसांची सहल योजना तयार करा",
+            "जवळपास आदिवासी कला आणि हस्तकला दुकाने शोधा",
         ],
         micButton: "बोला",
         readAloud: "मोठ्याने वाचा",
@@ -257,7 +257,7 @@ const ChatMessage = ({ message, onSpeak, isUserMessage, speakingMessageId, isTts
             {/* Conditional width for the chat bubble: wider for tables, narrower for text. */}
             <div className={`w-full ${hasPlanTable ? 'max-w-[95%]' : 'max-w-[80%]'} shadow-md flex items-start ${isUser ? 'bg-green-600 text-white rounded-tr-xl rounded-tl-xl rounded-bl-xl p-3' : 'bg-gray-200 text-gray-800 rounded-tl-xl rounded-tr-xl rounded-br-xl p-3'}`}>
                 {!isUser && (
-                       <button
+                        <button
                         onClick={() => onSpeak(content, message.id)}
                         className={`mr-2 p-2 rounded-full transition-colors duration-200 ${isSpeaking ? 'bg-red-500 text-white' : 'bg-gray-300 text-gray-700 hover:bg-gray-400'}`}
                         title={isSpeaking ? 'Stop Reading' : 'Read Aloud'}
@@ -313,7 +313,7 @@ const QuickReplyButtons = ({ onQueryClick, language, isLoading }) => {
     );
 };
 
-const IndiaTourismChatbot = () => {
+const JharkhandTourismChatbot = () => {
     const [messages, setMessages] = useState([]);
     const [isLoading, setIsLoading] = useState(false);
     const [isTtsLoading, setIsTtsLoading] = useState(false);
@@ -994,7 +994,7 @@ const IndiaTourismChatbot = () => {
                         {/* Chat header with close button */}
                         <div className="flex items-center justify-between px-4 py-3 border-b border-gray-200 bg-white rounded-t-2xl">
                             <div className="flex items-center space-x-2">
-                                <span className="font-bold text-green-700 text-2xl">India Tourism AI</span>
+                                <span className="font-bold text-green-700 text-2xl">Jharkhand Tourism AI</span>
                                 
                                 {/* Language Selector Dropdown */}
                                 <div className="relative" ref={dropdownRef}>
@@ -1106,13 +1106,12 @@ const IndiaTourismChatbot = () => {
                 >
                     <svg className="w-8 h-8 text-white" fill="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
                         <path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm0 15c-2.76 0-5-2.24-5-5h2c0 1.66 1.34 3 3 3s3-1.34 3-3H17c0 2.76-2.24 5-5 5zm-3-3v-2h2v2H9zm4 0v-2h2v2h-2z"/>
-                                </svg>
-                            </button>
-                        )}
-                </div>
-                </>
-            );
-        };
-        
-        export default IndiaTourismChatbot;
-
+                            </svg>
+                        </button>
+                    )}
+            </div>
+            </>
+        );
+    };
+    
+    export default JharkhandTourismChatbot;
